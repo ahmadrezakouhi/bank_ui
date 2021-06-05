@@ -28,7 +28,7 @@
     </nav>
 
     <div class="container mt-3">
-        <table class="table  table-striped">
+        <table class="table table-dark table-striped">
             <thead>
                 <th>name</th>
                 <th>last name</th>
