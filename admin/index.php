@@ -27,6 +27,34 @@
         </div>
     </nav>
 
+    <div class="container mt-3">
+        <table class="table  table-striped">
+            <thead>
+                <th>name</th>
+                <th>last name</th>
+                <th>email</th>
+                <th>phone</th>
+                <th>actions</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ahmad reza</td>
+                    <td>kouhi</td>
+                    <td>ahmadrezakouhi@gmail.com</td>
+                    <td>0913077493</td>
+                    <td>
+                        <div class="btn-group btn-group-sm">
+                            <button type="button" class="btn btn-warning">edit</button>
+                            <button type="button" class="btn btn-danger">delete</button>
+
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
 
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
