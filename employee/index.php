@@ -28,6 +28,41 @@
         </div>
     </nav>
 
+    <div class="container mt-3">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between">
+                <h3 class="">complicates</h3>
+
+            </div>
+            <div class="card-body" style="max-height:500px ;overflow:auto">
+                <table class="table  table-striped">
+                    <thead>
+                        <th>from</th>
+                        <th>title</th>
+
+                        <th>actions</th>
+                    </thead>
+                    <tbody>
+                        <?php for($i=0;$i<10;$i++): ?>
+                        <tr>
+                            <td>ahmad reza</td>
+                            <td>withdraw</td>
+
+                            <td>
+                                <div class="btn-group btn-group-sm">
+                                    <button type="button" class="btn btn-warning">importan</button>
+                                    <button type="button" class="btn btn-info">answer</button>
+
+                                </div>
+                            </td>
+                        </tr>
+                        <?php endfor;?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
 
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
