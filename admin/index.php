@@ -82,7 +82,10 @@
                         <div class="form-group"><label for="last_name">last name</label><input type="text" class="form-control" id="last_name"></div>
                         <div class="form-group"><label for="email">email</label><input type="email" class="form-control" id="email"></div>
                         <div class="form-group"><label for="phone">phone</label><input type="text" class="form-control" id="phone"></div>
-
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="is_employee" name="is_employee">
+                            <label class="custom-control-label" for="is_employee"> employee</label>
+                        </div>
 
                     </div>
                     <div class="modal-footer">
