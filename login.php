@@ -10,8 +10,8 @@
 
 <body>
 
-    <div class="container">
-        <div class="card mt-5 shadow">
+    <div class="container d-flex justify-content-center">
+        <div class="card mt-5 shadow " style="width:500px">
             <div class="card-header">
                 <h3>login</h3>
             </div>
