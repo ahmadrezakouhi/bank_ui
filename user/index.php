@@ -2,12 +2,11 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
     <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -27,32 +26,33 @@
         </div>
     </nav>
 
+
+
+
+
     <div class="container mt-3">
         <div class="card">
             <div class="card-header d-flex justify-content-between">
-                <h3 class="">Contacts</h3>
+                <h3 class="">complaint</h3>
                 <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">button</button>
             </div>
             <div class="card-body" style="max-height:500px ;overflow:auto">
-                <table class="table table-dark table-striped">
+                <table class="table  table-striped">
                     <thead>
-                        <th>name</th>
-                        <th>last name</th>
-                        <th>email</th>
-                        <th>phone</th>
+
+                        <th>title</th>
+                        <th>answer</th>
                         <th>actions</th>
                     </thead>
                     <tbody>
                         <?php for($i=0;$i<10;$i++): ?>
                         <tr>
-                            <td>ahmad reza</td>
-                            <td>kouhi</td>
-                            <td>ahmadrezakouhi@gmail.com</td>
-                            <td>0913077493</td>
+                            <td>withdraw</td>
+                            <td><a class="btn btn-outline-info" href="#" role="button">Link button</a></td>
                             <td>
                                 <div class="btn-group btn-group-sm">
-                                    <button type="button" class="btn btn-warning">edit</button>
-                                    <button type="button" class="btn btn-danger">delete</button>
+                                    <button type="button" class="btn btn-outline-warning">edit</button>
+                                    <button type="button" class="btn btn-outline-danger">delete</button>
 
                                 </div>
                             </td>
@@ -64,13 +64,11 @@
         </div>
     </div>
 
-
-
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">complaint</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -78,10 +76,8 @@
                 <form action="" method="post">
                     <div class="modal-body">
 
-                        <div class="form-group"><label for="name">name</label><input type="text" class="form-control" id="name"></div>
-                        <div class="form-group"><label for="last_name">last name</label><input type="text" class="form-control" id="last_name"></div>
-                        <div class="form-group"><label for="email">email</label><input type="email" class="form-control" id="email"></div>
-                        <div class="form-group"><label for="phone">phone</label><input type="text" class="form-control" id="phone"></div>
+                        <div class="form-group"><label for="title">title</label><input type="text" class="form-control" id="title" name="title"></div>
+                        <div class="form-group"><label for="description">description</label><textarea name="description" id="description" cols="30" rows="10" class="form-control"></textarea></div>
 
 
                     </div>
@@ -93,7 +89,6 @@
             </div>
         </div>
     </div>
-
 
 
     <script src="../js/jquery-3.6.0.min.js"></script>
