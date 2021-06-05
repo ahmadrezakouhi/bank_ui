@@ -28,30 +28,70 @@
     </nav>
 
     <div class="container mt-3">
-        <table class="table table-dark table-striped">
-            <thead>
-                <th>name</th>
-                <th>last name</th>
-                <th>email</th>
-                <th>phone</th>
-                <th>actions</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>ahmad reza</td>
-                    <td>kouhi</td>
-                    <td>ahmadrezakouhi@gmail.com</td>
-                    <td>0913077493</td>
-                    <td>
-                        <div class="btn-group btn-group-sm">
-                            <button type="button" class="btn btn-warning">edit</button>
-                            <button type="button" class="btn btn-danger">delete</button>
+        <div class="card">
+            <div class="card-header d-flex justify-content-between">
+                <h3 class="">Contacts</h3>
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">button</button>
+            </div>
+            <div class="card-body" style="max-height:500px ;overflow:auto">
+                <table class="table table-dark table-striped">
+                    <thead>
+                        <th>name</th>
+                        <th>last name</th>
+                        <th>email</th>
+                        <th>phone</th>
+                        <th>actions</th>
+                    </thead>
+                    <tbody>
+                        <?php for($i=0;$i<10;$i++): ?>
+                        <tr>
+                            <td>ahmad reza</td>
+                            <td>kouhi</td>
+                            <td>ahmadrezakouhi@gmail.com</td>
+                            <td>0913077493</td>
+                            <td>
+                                <div class="btn-group btn-group-sm">
+                                    <button type="button" class="btn btn-warning">edit</button>
+                                    <button type="button" class="btn btn-danger">delete</button>
 
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                                </div>
+                            </td>
+                        </tr>
+                        <?php endfor;?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="" method="post">
+                    <div class="modal-body">
+
+                        <div class="form-group"><label for="name">name</label><input type="text" class="form-control" id="name"></div>
+                        <div class="form-group"><label for="last_name">last name</label><input type="text" class="form-control" id="last_name"></div>
+                        <div class="form-group"><label for="email">email</label><input type="email" class="form-control" id="email"></div>
+                        <div class="form-group"><label for="phone">phone</label><input type="text" class="form-control" id="phone"></div>
+
+
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-success">button</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
 
