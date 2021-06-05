@@ -33,7 +33,7 @@
                 <h3 class="">Contacts</h3>
                 <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">button</button>
             </div>
-            <div class="card-body">
+            <div class="card-body" style="max-height:500px ;overflow:auto">
                 <table class="table table-dark table-striped">
                     <thead>
                         <th>name</th>
@@ -43,6 +43,7 @@
                         <th>actions</th>
                     </thead>
                     <tbody>
+                        <?php for($i=0;$i<10;$i++): ?>
                         <tr>
                             <td>ahmad reza</td>
                             <td>kouhi</td>
@@ -56,6 +57,7 @@
                                 </div>
                             </td>
                         </tr>
+                        <?php endfor;?>
                     </tbody>
                 </table>
             </div>
