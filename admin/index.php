@@ -31,7 +31,7 @@
         <div class="card">
             <div class="card-header d-flex justify-content-between">
                 <h3 class="">Contacts</h3>
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">button</button>
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#add_contact_modal">button</button>
             </div>
             <div class="card-body" style="max-height:500px ;overflow:auto">
                 <table class="table table-dark table-striped text-center">
@@ -66,11 +66,11 @@
 
 
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="add_contact_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">add contact</h5>
+                    <h5 class="modal-title" id="add_contact_modal">add contact</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -78,10 +78,11 @@
                 <form action="" method="post">
                     <div class="modal-body">
 
-                        <div class="form-group"><label for="name">name</label><input type="text" class="form-control" id="name"></div>
-                        <div class="form-group"><label for="last_name">last name</label><input type="text" class="form-control" id="last_name"></div>
-                        <div class="form-group"><label for="email">email</label><input type="email" class="form-control" id="email"></div>
-                        <div class="form-group"><label for="phone">phone</label><input type="text" class="form-control" id="phone"></div>
+                        <div class="form-group"><label for="name">name</label><input type="text" class="form-control" id="name" name="name"></div>
+                        <div class="form-group"><label for="last_name">last name</label><input type="text" class="form-control" id="last_name" name="last_name"></div>
+                        <div class="form-group"><label for="email">email</label><input type="email" class="form-control" id="email" name="email"></div>
+                        <div class="form-group"><label for="phone">phone</label><input type="text" class="form-control" id="phone" name="phone"></div>
+                        <div class="form-group"><label for="password">password</label><input type="password" class="form-control" id="password" name="password"></div>
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="is_employee" name="is_employee">
                             <label class="custom-control-label" for="is_employee"> employee</label>
