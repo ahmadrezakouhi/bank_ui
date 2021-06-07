@@ -34,7 +34,7 @@
                 <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">button</button>
             </div>
             <div class="card-body" style="max-height:500px ;overflow:auto">
-                <table class="table table-dark table-striped">
+                <table class="table table-dark table-striped text-center">
                     <thead>
                         <th>name</th>
                         <th>last name</th>
