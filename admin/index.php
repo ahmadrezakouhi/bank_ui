@@ -89,7 +89,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <form action="" method="post">
+                <form action="" method="post" id="add_contact_form">
                     <div class="modal-body">
 
                         <div class="form-group"><label for="name">name</label><input type="text" class="form-control" id="name" name="name"></div>
@@ -115,6 +115,7 @@
 
 
     <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
